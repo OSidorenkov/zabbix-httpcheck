@@ -100,7 +100,8 @@ def check_url():
             # Create triggers on this webchecks
             zapi.trigger.create(description="No response from {}".format(name),
                                 priority=priority,
-                                comments="Проблемы с сервисом {}. Смотрите HTTP код ручки в Last Value".format(name),
+                                comments="Some trouble with service {}. See HTTP response code of web check in Last 
+Value".format(name),
                                 expression="{%s:web.test.rspcode[%s,%s].last()}<199 or"
                                            " {%s:web.test.rspcode[%s,%s].last()}>399" % (
                                     env, name, name, env, name, name
