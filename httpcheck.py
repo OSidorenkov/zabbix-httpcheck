@@ -79,7 +79,6 @@ def check_url():
 
             # Update checks and triggers from file
             zapi.httptest.update(httptestid=info.get('httptestid'),
-                                 # name=name,
                                  delay=delay,
                                  retries=retries,
                                  headers=headers,
