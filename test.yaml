@@ -1,0 +1,20 @@
+---
+- name: test qa
+  url: http://test.domain.lc/test/
+  env: qa
+  priority: 3
+
+- name: test qa2
+  url: http://abra-kadabra.ru
+  env: qa
+  priority: 2
+  delay: 120
+  timeout: 30
+
+- name: test qa3
+  url: http://test.ru
+  env: qa
+  priority: 2
+  delay: 120
+  timeout: 30
+  headers: "Accept: */*;q=0.8"

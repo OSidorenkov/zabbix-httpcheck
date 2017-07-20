@@ -1,0 +1,5 @@
+url = "https://zabbix.ru"  # Your Zabbix URL
+user = "zbx_admin_user"  # Zabbix admin user
+password = "zbx_admin_pass"  # Zabbix admin password
+file = "test.yaml"  # YAML file where you added web checks
+zbx_hosts = ['dev', 'qa', 'stage', 'prod']  # There are hosts where will be create/update/delete your web checks
